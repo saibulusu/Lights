@@ -36,9 +36,9 @@ void color_handler(const char* eventName, const char* data) {
         red = 0;
         setup();
     } else if (strcmp(data,"purple") == 0) {
-        blue = 255;
-        red = 255;
-        green = 0;
+        blue = 221;
+        red = 160;
+        green = 230;
         setup();
     } else if (strcmp(data,"yellow") == 0) {
         blue = 0;
@@ -67,6 +67,8 @@ void setup()
 {
     Particle.subscribe("Light_Color",color_handler,MY_DEVICES);
     
+    strip.begin();
+    strip.show();
     // set every light to the selected color
     for(int i = 0; i < strip.numPixels(); i++) {
         strip.setPixelColor(i,strip.Color(red,green,blue));
