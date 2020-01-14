@@ -35,25 +35,15 @@ void color_handler(const char* eventName, const char* data) {
         green = 255;
         red = 0;
         setup();
-    } else if (strcmp(data,"purple") == 0) {
-        blue = 221;
-        red = 160;
+    } else if (strcmp(data,"yellow") == 0) {
+        blue = 138;
+        red = 43;
         green = 230;
         setup();
-    } else if (strcmp(data,"yellow") == 0) {
-        blue = 0;
-        green = 255;
-        red = 255;
-        setup();
     } else if (strcmp(data,"orange") == 0) {
-        red = 255;
-        green = 160;
-        blue = 0;
-        setup();
-    } else if (strcmp(data,"white") == 0) {
-        red = 255;
-        green = 255;
-        blue = 255;
+        blue = 138;
+        red = 100;
+        green = 230;
         setup();
     } else if (strcmp(data,"clear") == 0) {
         red = 0;
