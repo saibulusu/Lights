@@ -1,3 +1,4 @@
+  
 // include libraries
 #include "Particle.h"
 #include "neopixel.h"
@@ -62,6 +63,8 @@ void setup()
     // set every light to the selected color
     for(int i = 0; i < strip.numPixels(); i++) {
         strip.setPixelColor(i,strip.Color(red,green,blue));
+        delay(15);
+        strip.show();
     }
 }
 
