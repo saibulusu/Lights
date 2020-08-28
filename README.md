@@ -7,4 +7,4 @@ Wiring:
 
 Various options for color of lights:
 ![Image](IMG_8492.JPG)
-![Image](https://github.com/saibulusu/Lights/blob/master/IMG_2131.JPG)
+![Image](IMG_2131.JPG)
